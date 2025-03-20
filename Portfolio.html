@@ -152,6 +152,31 @@
             text-decoration: underline;
         }
 
+        /* CV Download Button */
+		#cv-download {
+			margin-top: 20px;
+		}
+
+		#cv-download a {
+			background-color: #051305;
+			color: #fff;
+			padding: 12px 24px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 18px; /* Increased font size */
+			display: inline-block;
+			transition: background-color 0.3s, color 0.3s;
+			border: 2px solid #fff; /* Added a white border for better visibility */
+		}
+
+		#cv-download a:hover {
+			background-color: #45a049;
+			color: #110f0f;
+			border-color: #0a0a0a;
+		}
+
+
         /* Footer */
         footer {
             background-color: #1e8821;
@@ -160,15 +185,27 @@
             padding: 15px;
             margin-top: 20px;
         }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .skills-list, .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body style="background-image: url('./abstract-green-triangle-background-vector-1479054.avif');">
 
 <!-- Header -->
 <header>
-    <img  src="https://github.com/shalinij22/Shalini-J/blob/main/WhatsApp%20Image%202025-03-20%20at%2010.42.20%20PM.jpeg?raw=true>
+    <img  src="https://github.com/Hrithik1881/Personal-Portfolio/blob/main/pro.jpg?raw=true" width="120" height="120">
     <h1>Shalini J</h1>
-    <h2>Aspiring Cloud Engineer</h2>
+    <h2>Student at Patrician College Of Arts And Science</h2>
     <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -182,21 +219,60 @@
     <div class="container">
         <h2>About Me</h2>
         <p>
-            Hi! I'm Shalini J, an aspiring Cloud Engineer passionate about cloud computing, web development, and AI-driven solutions.
+            Hi! I'm Shalini J, a passionate student at Patrician College Of Arts And Science, exploring the world of web development and coding. 
+            I enjoy building creative and functional websites using modern technologies.
         </p>
     </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
+<!-- Skills Section -->
+<section id="skills">
     <div class="container">
-        <h3>Contact Me</h3>
-        <p>Email: <a href="mailto:shalinikennady@gmail.com">shalinikennady@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/shalinij22" target="_blank">github.com/shalinij22</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/shalini-j-36b477284" target="_blank">linkedin.com/in/shalini-j</a></p>
+        <h3 style="color: #0e110e;">Skills</h3>
+        <div class="skills-list">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Git</span>
+            <span>MongoDB</span>
+            <span>Firebase</span>
+        </div>
     </div>
 </section>
 
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h3 style="color: #151a15;">Projects</h3>
+        <div class="projects">
+            <div class="project-card">
+                <h2>Project 1</h2>
+                <p>A to-do list app built with React and Firebase for real-time updates.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h2>Project 2</h2>
+                <p>A weather app that uses an API to fetch live weather data.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section  id="contact">
+    <div class="container">
+        <h3 style="color: #051305;">Contact Me</h3>
+        <p style='color: #051305;'>Email: <a href="mailto:shalinikennady@gmail.com">shalinikennady@gmail.com</a></p>
+        <p style='color: #051305;'>GitHub: <a href="https://github.com/shalinij22" target="_blank">https://github.com/shalinij</a></p>
+        <p style='color: #051305;'>LinkedIn: <a href="https://www.linkedin.com/in/shalini-j-36b477284/" target="_blank">https://www.linkedin.com/in/shalini-j</a></p>
+        
+        <!-- CV Download -->
+        <div class="cv-download" id="cv-download">
+            <a href="https://drive.google.com/file/d/1BNyqtpVhKU6VzIb7mVFPRyKsQqJxKWyV/view?usp=sharing" download>Download CV</a>
+        </div>
+    </div>
+</section>
 <footer>
     <p>&copy; 2025 Shalini J. All rights reserved.</p>
 </footer>
